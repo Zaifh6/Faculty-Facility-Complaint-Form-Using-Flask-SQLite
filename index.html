@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Complaint Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f1f5f9;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen">
+    <div class="bg-blue-50 bg-opacity-90 p-8 rounded-lg shadow-lg w-full max-w-lg border border-gray-300">
+        <h1 class="text-3xl font-semibold mb-6 text-center text-gray-800">Complaint Form</h1>
+        <form action="#" method="post">
+            <div class="mb-4">
+                <label for="fname" class="block text-gray-700 text-sm font-medium">First Name:</label>
+                <input type="text" id="fname" name="nm" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 px-3 py-2" value="John">
+            </div>
+            <div class="mb-4">
+                <label for="lname" class="block text-gray-700 text-sm font-medium">Last Name:</label>
+                <input type="text" id="lname" name="lnm" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 px-3 py-2" value="Doe">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 text-sm font-medium">Email:</label>
+                <input type="email" id="email" name="em" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 px-3 py-2" required>
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-gray-700 text-sm font-medium">Message:</label>
+                <textarea id="message" name="message" rows="4" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 px-3 py-2" placeholder="Enter your message here" required></textarea>
+            </div>
+            <button type="submit" class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
